@@ -1,9 +1,34 @@
+@font-face {
+    font-family: 'Gilroy-Bold';
+    src: url('assets/fonts/gilroy-bold.eot');
+    /* IE 9 Compatibility Mode */
+    src: url('assets/fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'),
+        /* IE < 9 */
+        url('assets/fonts/gilroy-bold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('assets/fonts/gilroy-bold.woff') format('woff'),
+        /* Firefox >= 3.6, any other modern browser */
+        url('assets/fonts/gilroy-bold.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('assets/fonts/gilroy-bold.svg#gilroy-bold') format('svg');
+    /* Chrome < 4, Legacy iOS */
+}
+html{
+    font-family: 'Gilroy-Bold';
+}
+
+label{
+    
+}
 body {
+    
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     margin: 0
 }
+
+
 
 .select-css {
     outline: none;
@@ -485,7 +510,7 @@ select {
 
 .section-text {
     color: #00004a;
-    font-family: Arial;
+    font-family: 'Gilroy-Bold';
     font-size: 18px;
     font-weight: 400;
     margin-left: 10px;
@@ -535,7 +560,7 @@ form {
 .section-name,
 .section-names {
     color: #00004a;
-    font-family: Arial;
+    font-family: 'Gilroy-Bold';
     font-size: 18px;
     font-weight: 400;
     margin-top: 30px
@@ -935,9 +960,12 @@ select {
     color: #00004a;
     font-size: 16px;
     font-weight: 400;
-    font-family: Arial;
+font-family: 'Gilroy-Bold';
 }
 
+p{
+    font-family: 'Gilroy-Bold';
+}
 
 
 .section-btn {
@@ -994,10 +1022,22 @@ form {
 .section-names {
     color: #00004a;
     font-weight: 400;
-    font-family: 'Arial';
+    font-family: 'Gilroy-Bold';
     font-size: 18px;
     /* padding-bottom: 8px; */
     margin-top: 30px;
+}
+
+button{
+    font-family: 'Gilroy-Bold';
+}
+
+.check-errors{
+    font-family: 'Gilroy-Bold';
+}
+
+.footer-text{
+    font-family: 'Gilroy-Bold';
 }
 
 .section-text {
@@ -1218,12 +1258,12 @@ form {
 
 .header {
     background-color: #FFBB00;
-    height: 200px;
+    height: 250px;
 }
 
 .header-img {
-    width: 270px;
-    height: 230px;
+    width: 250px;
+    height: 250px;
     animation: pulse 2s infinite;
 }
 
