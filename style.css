@@ -28,12 +28,19 @@ body {
     margin: 0
 }
 
+select option{
+    font-size: 50px;
+}
 
+#title{
+    font-size: 24px;
+    font-family: 'Gilroy-Bold';
+}
 
 .select-css {
     outline: none;
     display: block;
-    font-size: 16px;
+    font-size: 17px;
     font-family: sans-serif;
     font-weight: 700;
     color: #444;
@@ -51,11 +58,12 @@ body {
     -webkit-appearance: none;
     appearance: none;
     background-color: #fff;
-    /* background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%); */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'), linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
     background-repeat: no-repeat, repeat;
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
 }
+
 
 .select-css::-ms-expand {
     display: none;
@@ -137,11 +145,11 @@ code {
     }
 
     .section .section-input {
-        width: 480px
+        width: 480px;
     }
 
     .section .sections-input {
-        width: 440px
+        width: 480px;
     }
 }
 
@@ -393,7 +401,7 @@ code {
 
 .header {
     background-color: #fb0;
-    height: 200px
+    height: 100px
 }
 
 .header-img {
@@ -413,10 +421,17 @@ code {
     display: flex;
 }
 
+.lang-div div{
+    display: flex;
+    align-items: center;
+}
+
 .lang-div p{
     padding: 2px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 14px;
+    margin-right: 10px;
 }
 
 @media (max-width: 1160px) {
@@ -469,7 +484,7 @@ code {
 
 .section {
     /* background-color: #fb0; */
-    padding: 50px 0
+    padding-bottom: 50px
 }
 
 .section-input {
@@ -521,7 +536,7 @@ select {
 .section-btn {
     background-color: #00004a;
     border: none;
-    border-radius: 100px;
+    border-radius: 10px;
     color: #fff;
     cursor: pointer;
     display: block;
@@ -531,7 +546,6 @@ select {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    width: 200px
 }
 
 form {
@@ -675,8 +689,8 @@ form {
 }
 
 .sections-input {
-    padding-left: 50px;
-    width: 610px
+    /* /* padding-left: 50px; */
+    /* width: 610px */
 }
 
 .modalContainer {
@@ -814,10 +828,8 @@ code {
         width: 480px;
     }
 
-    .section .sections-input {
-
-        width: 440px;
-
+    .section     .section-btn{
+        width: 100%;
     }
 }
 
@@ -838,7 +850,7 @@ code {
 
     .section .sections-input {
 
-        width: 310px;
+        /* width: 310px; */
 
     }
 
@@ -877,7 +889,7 @@ code {
 
     .section .sections-input {
 
-        width: 240px;
+        /* width: 240px; */
 
     }
 
@@ -915,8 +927,16 @@ code {
 }
 
 
+
+.lang-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
 .section {
-    padding: 50px 0;
+    padding-bottom: 50px ;
 }
 
 .section-input {
@@ -972,10 +992,10 @@ p{
     color: #fff;
     background-color: #00004a;
     border: none;
-    border-radius: 100px;
+    /* border-radius: 100px; */
     font-weight: 600;
     font-size: 16px;
-    width: 200px;
+    width: 650px;
     height: 60px;
     margin-left: auto;
     margin-right: auto;
@@ -998,7 +1018,7 @@ form {
     color: #00004a;
     border: 1px solid #00004a;
     background-color: #fff;
-    border-radius: 0px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: 400;
     height: 60px;
@@ -1169,8 +1189,8 @@ button{
 }
 
 .sections-input {
-    padding-left: 50px;
-    width: 610px;
+    /* padding-left: 50px; */
+    /* width: 610px; */
 }
 
 .modalContainer {
@@ -1258,12 +1278,12 @@ button{
 
 .header {
     background-color: #FFBB00;
-    height: 250px;
+    height: 180px;
 }
 
 .header-img {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     animation: pulse 2s infinite;
 }
 

@@ -7,6 +7,7 @@ let _res = {
 }
 let _translations = {
     'ru':{
+        'title':'Записаться',
         'name':'Ваше имя',
         'phone':'Ваш номер телефона',
         'courses':'Какие курсы вас интересуют?',
@@ -33,6 +34,7 @@ let _translations = {
         'message_success_desc':'Ваша заявка отправлена, ожидайте звонка!',
     },
     'uz': {
+        'title': 'Ro`yxatdan o`tish',
         'name': 'Ismingiz',
         'phone': 'Raqamingiz',
         'courses': 'Qaysi kurs haqida ma`lumot olmoqchisiz?',
@@ -70,7 +72,8 @@ closeModalBtn.onclick = function () {
 }
 
 function updateText() {
-    var titleElement = document.getElementById('name');
+    var titleElement = document.getElementById('title')
+    var nameElement = document.getElementById('name');
     var contentElement = document.getElementById('phone');
     var coursesElement = document.getElementById('courses');
     var englishElement = document.getElementById('english-text');
@@ -93,7 +96,8 @@ function updateText() {
     var messageCourseElement = document.getElementById('checkError');
     var modalMessageCourseElement = document.getElementById('modal-message');
 
-    titleElement.placeholder = _translations[language]['name'];
+    titleElement.textContent = _translations[language]['title']
+    nameElement.placeholder = _translations[language]['name'];
     contentElement.placeholder = _translations[language]['phone'];
     coursesElement.textContent = _translations[language]['courses'];
     englishElement.textContent = _translations[language]['English'];
