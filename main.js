@@ -42,7 +42,7 @@ let _translations = {
         'courses': 'Qaysi kurs haqida ma`lumot olmoqchisiz?',
         'English': 'Ingliz tili',
         'Math': 'Matematika',
-        'Arif': 'Aqliy arifmetika',
+        'Arif': 'Mental Arifmetika',
         'Biologiya': 'Biologiya',
         'Chemis': 'Kimyo',
         'Uzb': 'Ona tili',
