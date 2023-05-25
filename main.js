@@ -10,16 +10,18 @@ let _translations = {
         'title':'Записаться',
         'name':'Ваше имя',
         'phone':'Ваш номер телефона',
-        'courses':'Какие курсы вас интересуют?',
+        'courses':'КАКИЕ КУРСЫ ВАС ИНТЕРЕСУЮТ?',
         'English':'Английский',
         'Math':'Математика',
+        'Arif':'Ментальная арифметика',
         'Biologiya':'Биология',
         'Chemis':'Химия',
         'Uzb':'Узбекский язык',
-        'Rus':'Русский язык',
+        'Pravo':'Правоведение',
+        'Rus':'Русский язык и литература',
         'History':'История',
         'send':'Записаться',
-        'comment':'Следите за обновлениями и в других сетях, не отставайте от новостей!',
+        'comment':'Следите за нами в социальных сетях и будьте в курсе последних событий',
         'reviews':'Отзывы',
         'call':'Позвонить',
         'geo':'Местоположение',
@@ -40,13 +42,15 @@ let _translations = {
         'courses': 'Qaysi kurs haqida ma`lumot olmoqchisiz?',
         'English': 'Ingliz tili',
         'Math': 'Matematika',
+        'Arif': 'Aqliy arifmetika',
         'Biologiya': 'Biologiya',
         'Chemis': 'Kimyo',
         'Uzb': 'Ona tili',
-        'Rus': 'Rus tili',
+        'Pravo': 'Huquqshunoslik',
+        'Rus': 'Rus tili va Adabiyot',
         'History': 'Tarix',
         'send': 'Yuborish',
-        'comment': 'Bizni boshqa tarmoqlarda ham kuzating, yangiliklardan qolib ketmang!',
+        'comment': 'Bizni ijtimoiy tarmoqlarda kuzatib boring va yangiliklardan xabardor bo`ling',
         'reviews': 'Natijalar',
         'call': 'Telefon',
         'geo': 'Joylashuvimiz',
@@ -78,9 +82,11 @@ function updateText() {
     var coursesElement = document.getElementById('courses');
     var englishElement = document.getElementById('english-text');
     var mathElement = document.getElementById('math-text');
+    var arifElement = document.getElementById('arif-text');
+    var pravoElement = document.getElementById('pravo-text');
+
     var chemisElement = document.getElementById('chemis-text');
     var bioElement = document.getElementById('bio-text');
-    var uzElement = document.getElementById('uz-text');
     var ruElement = document.getElementById('ru-text');
     var tarixElement = document.getElementById('tarix-text');
     var submitElement = document.getElementById('btnSubmit');
@@ -102,9 +108,10 @@ function updateText() {
     coursesElement.textContent = _translations[language]['courses'];
     englishElement.textContent = _translations[language]['English'];
     mathElement.textContent = _translations[language]['Math'];
+    pravoElement.textContent = _translations[language]['Pravo'];
+    arifElement.textContent = _translations[language]['Arif'];
     bioElement.textContent = _translations[language]['Biologiya'];
     chemisElement.textContent = _translations[language]['Chemis'];
-    uzElement.textContent = _translations[language]['Uzb'];
     ruElement.textContent = _translations[language]['Rus'];
     tarixElement.textContent = _translations[language]['History'];
     submitElement.textContent = _translations[language]['send'];

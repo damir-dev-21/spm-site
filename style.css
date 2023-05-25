@@ -417,7 +417,7 @@ code {
 .lang-div{
     position: absolute;
     top: 0;
-    right: -30px;
+    right: 5px;
     display: flex;
 }
 
@@ -431,7 +431,7 @@ code {
     cursor: pointer;
     font-weight: bold;
     font-size: 14px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 @media (max-width: 1160px) {
@@ -1326,10 +1326,25 @@ button{
     }
 }
 
+@media (max-width:450px){
+    .container{
+        width: 300px;
+    }
+}
+
 @media (max-width:620px) {
 
     .container {
         width: 500px;
+    }
+
+    .lang-div p{
+        font-size: 11px;
+    }
+
+    .lang-img{
+        width: 20px;
+        height: 20px;
     }
 }
 

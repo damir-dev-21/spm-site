@@ -100,7 +100,7 @@
                                         class="MuiCheckbox-root MuiCheckbox-colorDefault MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorDefault PrivateSwitchBase-root checkBtn css-1rlbz42"><input
                                             class="PrivateSwitchBase-input css-1m9pwf3" type="checkbox"
                                             onchange="setCourses(this)" data-indeterminate="false"
-                                            aria-label="Checkbox demo" value="IELTS">
+                                            aria-label="Checkbox demo" value="Aqliy arifmetika">
                                         <!-- <svg
                                             class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
                                             focusable="false" aria-hidden="true" viewBox="0 0 24 24"
@@ -109,7 +109,7 @@
                                             d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z">
                                         </path>
                                         </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                    </span><label class="section-text">IELTS</label></div>
+                                    </span><label id="arif-text" class="section-text">Aqliy arifmetika</label></div>
                                 <div class="section-checkbox"><span
                                         class="MuiCheckbox-root MuiCheckbox-colorDefault MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorDefault PrivateSwitchBase-root checkBtn css-1rlbz42"><input
                                             class="PrivateSwitchBase-input css-1m9pwf3" type="checkbox"
@@ -124,6 +124,20 @@
                                         </path>
                                         </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
                                     </span><label id="math-text" class="section-text">Matematika</label></div>
+                                <div class="section-checkbox"><span
+                                        class="MuiCheckbox-root MuiCheckbox-colorDefault MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorDefault PrivateSwitchBase-root checkBtn css-1rlbz42"><input
+                                            class="PrivateSwitchBase-input css-1m9pwf3" type="checkbox"
+                                            onchange="setCourses(this)" data-indeterminate="false"
+                                            aria-label="Checkbox demo" value="Huquqshunoslik">
+                                        <!-- <svg
+                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
+                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+                                            data-testid="CheckBoxOutlineBlankIcon"> -->
+                                        <path
+                                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z">
+                                        </path>
+                                        </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
+                                    </span><label id="pravo-text" class="section-text">Huquqshunoslik</label></div>
                                 <div class="section-checkbox"><span
                                         class="MuiCheckbox-root MuiCheckbox-colorDefault MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorDefault PrivateSwitchBase-root checkBtn css-1rlbz42"><input
                                             class="PrivateSwitchBase-input css-1m9pwf3" type="checkbox"
@@ -152,20 +166,7 @@
                                         </path>
                                         </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
                                     </span><label id="chemis-text" class="section-text">Kimyo</label></div>
-                                <div class="section-checkbox"><span
-                                        class="MuiCheckbox-root MuiCheckbox-colorDefault MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorDefault PrivateSwitchBase-root checkBtn css-1rlbz42"><input
-                                            class="PrivateSwitchBase-input css-1m9pwf3" type="checkbox"
-                                            onchange="setCourses(this)" data-indeterminate="false"
-                                            aria-label="Checkbox demo" value="Ona tili">
-                                        <!-- <svg
-                                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"
-                                            focusable="false" aria-hidden="true" viewBox="0 0 24 24"
-                                            data-testid="CheckBoxOutlineBlankIcon"> -->
-                                        <path
-                                            d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z">
-                                        </path>
-                                        </svg><span class="MuiTouchRipple-root css-w0pj6f"></span>
-                                    </span><label id="uz-text" class="section-text">Ona tili</label></div>
+                                
                                 <div class="section-checkbox"><span
                                         class="MuiCheckbox-root MuiCheckbox-colorDefault MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorDefault PrivateSwitchBase-root checkBtn css-1rlbz42"><input
                                             class="PrivateSwitchBase-input css-1m9pwf3" type="checkbox"
@@ -198,7 +199,7 @@
                             <div class="check-errors" id="checkError">Siz checkbox tanlamadingizz</div>
                         </div>
                         <!-- <button class="section-btn" type="submit" id="btnSubmit">Yuborish</button> -->
-                        <button onclick="send()" class="section-btn" id="btnSubmit">Записаться</button>
+                        <button onclick="send()" class="section-btn" id="btnSubmit">ЗАПИСАТЬСЯ</button>
                     </form>
                 </div>
             </div>
@@ -212,13 +213,13 @@
                     <div class="footer-list">
                         <div class="footer-title"><a href="https://www.instagram.com/spm_school/"
                                 class="footer-link">Instagram</a></div>
-                        <div class="footer-title"><a href="https://t.me/spm_bio" class="footer-link">Telegram</a></div>
+                        <div class="footer-title"><a href="https://t.me/spm_school" class="footer-link">Telegram</a></div>
 
 
                         <div class="footer-title"><a
-                                href="https://www.tiktok.com/@spm.house?_d=secCgYIASAHKAESPgo84F4k5ncTNq96a%2B6j0yFzFQkkAL7xi3mjGpXU3%2FWnIKak6LXrXZzuFjgYFaUJ0Fvhy4sUUEWswmjfmD1NGgA%3D&amp;_r=1&amp;language=ru&amp;sec_uid=MS4wLjABAAAA73dawm7u7kkOIPJU"
+                                href="https://www.tiktok.com/@spmbio?_t=8ccL7LbNuOQ&_r=1"
                                 class="footer-link">TikTok</a></div>
-                        <div class="footer-title"><a href="https://www.facebook.com/spm.bio"
+                        <div class="footer-title"><a href="https://www.facebook.com/profile.php?id=100068656055690&mibextid=LQQJ4d"
                                 class="footer-link">Facebook</a></div>
                     </div>
                     <p class="footer-texts">© Все права защищены 2023</p>
